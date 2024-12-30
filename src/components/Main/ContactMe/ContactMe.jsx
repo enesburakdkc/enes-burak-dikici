@@ -3,7 +3,9 @@
 function ContactMe() {
 
     return (
-        <p>ContactMe</p>
+        <section id="contact">
+            Contact Me
+        </section>
     )
 }
 

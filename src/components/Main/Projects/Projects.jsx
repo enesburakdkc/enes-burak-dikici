@@ -3,7 +3,9 @@
 function Projects() {
 
     return (
-        <p>Projects</p>
+        <section id="projects">
+            Projects
+        </section>
     )
 }
 

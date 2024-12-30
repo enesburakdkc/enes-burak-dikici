@@ -29,9 +29,9 @@
 }
 
 :root {
-    @apply m-0 p-0 bg-white
+    @apply m-0 p-0 bg-white scroll-smooth
 }
 
 body {
-    @apply m-auto flex flex-col h-screen font-poppins
+    @apply m-auto flex flex-col h-screen font-poppins antialiased
 }

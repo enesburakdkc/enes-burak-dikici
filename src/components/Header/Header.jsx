@@ -10,7 +10,7 @@ function Header() {
         {id: 'contact', name: 'Contact Me'}]
 
     return (
-        <header className="w-[75vw] h-24 fixed flex items-center justify-between font-semibold mx-auto left-[50%] -translate-x-1/2 bg-white">
+        <header className="w-[75vw] h-24 z-50 fixed flex items-center justify-between font-semibold mx-auto left-[50%] -translate-x-1/2 bg-white">
             <a href="#home" className="h-[100%] transition-all hover:scale-105 hover:drop-shadow-lg"><img src={Logo} alt="Logo" className="h-[100%]" /></a>
             <ul className="flex flex-row gap-12">
                 {categories.map(categorie => (

@@ -35,3 +35,26 @@
 body {
     @apply m-auto flex flex-col h-screen font-poppins antialiased
 }
+
+@media (max-width: 1340px) {
+    .portre { @apply hidden }
+}
+@media (max-width: 1100px) {
+    .header { @apply w-[100vw] justify-evenly }
+    .aside { @apply hidden }
+    .main { @apply w-[85vw] p-0 }
+    .social { @apply flex }
+}
+@media (max-width: 760px) {
+    .logo { @apply hidden }
+    .header { @apply justify-center bg-black text-white }
+    .about { @apply max-h-none h-auto }
+    .about div { @apply max-h-none h-auto }
+    .skills, .skills div { @apply max-h-none }
+    .icons-temporal { @apply hidden }
+    .icons { @apply flex }
+}
+@media (max-width: 530px) {
+    .header ul { @apply text-xs gap-8 }
+    .name { @apply text-5xl }
+}

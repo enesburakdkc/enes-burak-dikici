@@ -5,7 +5,7 @@ import { faHtml5, faCss3Alt, faJs, faReact, faPhp, faWordpress } from "@fortawes
 function Skills() {
 
     return (
-        <section id="skills" className="skills h-[calc(100vh-6rem)] max-h-[calc(100vh-6rem)] flex flex-col gap-12 justify-center items-center font-light text-white">
+        <section id="skills" className="skills min-h-[calc(100vh-6rem)] max-h-[calc(100vh-6rem)] flex flex-col gap-12 justify-center items-center font-light text-white">
             <div className="max-h-[calc(100vh-6rem)] flex flex-row gap-12 justify-between items-center font-light text-white">
                 <div className="max-max-h-[calc(100vh-6rem)] bg-black p-8 rounded-2xl">
                     <h2 className="text-4xl font-medium">Skills</h2>

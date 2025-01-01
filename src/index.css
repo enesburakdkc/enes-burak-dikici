@@ -45,16 +45,22 @@ body {
     .main { @apply w-[85vw] p-0 }
     .social { @apply flex }
 }
-@media (max-width: 760px) {
-    .logo { @apply hidden }
+@media (max-width: 770px) {
+    .header .logo { @apply hidden }
     .header { @apply justify-center bg-black text-white }
-    .about { @apply max-h-none h-auto }
-    .about div { @apply max-h-none h-auto }
+    .about, .about div { @apply max-h-none }
     .skills, .skills div { @apply max-h-none }
+    .projects, .projects div { @apply max-h-none }
+    .contact, .contact div { @apply max-h-none }
     .icons-temporal { @apply hidden }
     .icons { @apply flex }
+    .desktopProjects { @apply hidden }
+    .mobileProjects { @apply flex }
 }
-@media (max-width: 530px) {
-    .header ul { @apply text-xs gap-8 }
+@media (max-width: 550px) {
+    .header { @apply justify-between px-10 }
+    .header .logo { @apply flex brightness-[1000%] }
+    .header ul { @apply hidden }
+    .header .faBars { @apply flex }
     .name { @apply text-5xl }
 }

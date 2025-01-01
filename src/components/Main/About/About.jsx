@@ -2,7 +2,7 @@
 function About() {
 
     return (
-        <section id="about" className="about h-[calc(100vh-6rem)] max-h-[calc(100vh-6rem)] flex flex-row justify-evenly items-center">
+        <section id="about" className="about min-h-[calc(100vh-6rem)] max-h-[calc(100vh-6rem)] flex flex-row justify-evenly items-center">
             <div className="max-h-[calc(100vh-6rem)] font-light bg-black text-white p-8 rounded-2xl">
                 <h2 className="text-4xl font-medium">About</h2>
                 <br />

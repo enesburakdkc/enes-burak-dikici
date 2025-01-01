@@ -14,22 +14,22 @@ function Skills() {
                 </div>
 
                 <ul className="icons-temporal grid grid-cols-2 gap-20 text-black py-8 px-12 place-items-center">
+                    <li><FontAwesomeIcon icon={faPhp} size="2x" className="scale-150" /></li>
+                    <li><FontAwesomeIcon icon={faWordpress} size="2x" className="scale-150" /></li>
                     <li><FontAwesomeIcon icon={faHtml5} size="2x" className="scale-150" /></li>
                     <li><FontAwesomeIcon icon={faCss3Alt} size="2x" className="scale-150" /></li>
                     <li><FontAwesomeIcon icon={faJs} size="2x" className="scale-150" /></li>
                     <li><FontAwesomeIcon icon={faReact} size="2x" className="scale-150" /></li>
-                    <li><FontAwesomeIcon icon={faPhp} size="2x" className="scale-150" /></li>
-                    <li><FontAwesomeIcon icon={faWordpress} size="2x" className="scale-150" /></li>
                 </ul>
             </div>
 
             <ul className="icons hidden w-[100%] flex flex-row justify-evenly text-black">
+                <li><FontAwesomeIcon icon={faPhp} size="2x" className="scale-150" /></li>
+                <li><FontAwesomeIcon icon={faWordpress} size="2x" className="scale-150" /></li>
                 <li><FontAwesomeIcon icon={faHtml5} size="2x" className="scale-150" /></li>
                 <li><FontAwesomeIcon icon={faCss3Alt} size="2x" className="scale-150" /></li>
                 <li><FontAwesomeIcon icon={faJs} size="2x" className="scale-150" /></li>
                 <li><FontAwesomeIcon icon={faReact} size="2x" className="scale-150" /></li>
-                <li><FontAwesomeIcon icon={faPhp} size="2x" className="scale-150" /></li>
-                <li><FontAwesomeIcon icon={faWordpress} size="2x" className="scale-150" /></li>
             </ul>
         </section>
     )

@@ -54,12 +54,12 @@ body {
 
 @media (max-width: 1340px) {
     .portre {
-        @apply hidden
+        @apply min-w-60 min-h-60
     }
 }
 
 @media (max-width: 1100px) {
-    .header {
+    .navbar {
         @apply w-[100vw] justify-evenly
     }
 
@@ -74,19 +74,31 @@ body {
     .social {
         @apply flex
     }
+
+    .homeContent {
+        @apply mt-10
+    }
 }
 
 @media (max-width: 770px) {
-    .header .logo {
+    .navbar .logo {
         @apply hidden
     }
 
-    .header {
+    .navbar {
         @apply justify-center bg-black text-white
+    }
+
+    .about {
+        @apply mt-12
     }
 
     .about, .about div {
         @apply max-h-none
+    }
+
+    .skills {
+        @apply mt-12
     }
 
     .skills, .skills div {
@@ -118,20 +130,26 @@ body {
     }
 }
 
+@media (max-width: 710px) {
+    .portre {
+        @apply hidden
+    }
+}
+
 @media (max-width: 550px) {
-    .header {
+    .navbar {
         @apply justify-between px-10
     }
 
-    .header .logo {
+    .navbar .logo {
         @apply flex brightness-[1000%]
     }
 
-    .header .desktopMenu {
+    .navbar .desktopMenu {
         @apply hidden
     }
 
-    .header .faBars {
+    .navbar .faBars {
         @apply flex
     }
 

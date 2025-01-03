@@ -2,9 +2,23 @@
 
 function Projects() {
 
-    const categories = [{ language: "PHP", projects: ["Comic Book"] },
-    { language: "JavaScript", projects: ["Small Projects", "Calculator", "Weather App"] },
-    { language: "React", projects: ["Counter", "Color Picker", "To Do List", "Digital Clock", "Portfolio"] }]
+    const categories = [
+        { language: "PHP", projects: [
+            { name: "Comic Book", url: "#"},
+        ]},
+        { language: "JavaScript", projects: [
+            { name: "Small Projects", url: "small-js-projects/"}, 
+            { name: "Calculator", url: "small-js-projects/calculator/"}, 
+            { name: "Weather App", url: "js-weather-app/"},
+        ]},
+        { language: "React", projects: [
+            { name: "Counter", url: "#"},
+            { name: "Color Picker", url: "#"},
+            { name: "To Do List", url: "#"},
+            { name: "Digital Clock", url: "#"},
+            { name: "Portfolio", url: "/"},
+        ]},
+    ]
 
     return (
         <section id="projects" className="projects w-full min-h-[calc(100vh-6rem)] max-h-[calc(100vh-6rem)] flex flex-row justify-evenly items-center">
@@ -13,19 +27,19 @@ function Projects() {
                 <br />
                 <div className="desktopProjects w-full flex flex-row gap-4 font-normal">
 
-                    {categories.slice(0, 2).map((object) => {
+                    {categories.slice(0, 2).map((categorie) => {
 
                         return (
-                            <div key={object.language} className="h-44 flex flex-col gap-4 grow bg-black text-white p-4 rounded-2xl transition-all ease-in-out duration-700 hover:grow-[100]">
+                            <div key={categorie.language} className="h-44 flex flex-col gap-4 grow bg-black text-white p-4 rounded-2xl transition-all ease-in-out duration-700 hover:grow-[100]">
                                 <div>
-                                    {object.language}
+                                    {categorie.language}
                                 </div>
-                                <div key={object.language} className="h-44 flex flex-row gap-4 items-center justify-center grow bg-black text-white rounded-2xl bg-transparent transition-all ease-in-out duration-700 hover:grow-[100]">
-                                    {object.projects.map((item) => {
+                                <div key={categorie.language} className="h-44 flex flex-row gap-4 items-center justify-center grow bg-black text-white rounded-2xl bg-transparent transition-all ease-in-out duration-700 hover:grow-[100]">
+                                    {categorie.projects.map((project) => {
 
                                         return (
-                                            <a key={item} href="#" className="min-w-4 h-full flex items-center justify-center text-center grow bg-white text-black p-4 rounded-2xl transition-all ease-in-out duration-700 cursor-pointer hover:grow-[100] hover:scale-105">
-                                                {item}
+                                            <a key={project.name} href={project.url} target="_blank" className="min-w-4 h-full flex items-center justify-center text-center grow bg-white text-black p-4 rounded-2xl transition-all ease-in-out duration-700 cursor-pointer hover:grow-[100] hover:scale-105">
+                                                {project.name}
                                             </a>
                                         )
                                     })}
@@ -37,19 +51,19 @@ function Projects() {
 
                 <div className="desktopProjects w-full flex flex-row gap-2 mt-4 font-normal">
 
-                    {categories.slice(2, 3).map((object) => {
+                    {categories.slice(2, 3).map((categorie) => {
 
                         return (
-                            <div key={object.language} className="h-44 flex flex-col gap-4 grow bg-black text-white p-4 rounded-2xl transition-all ease-in-out duration-700 hover:grow-[100]">
-                                <div>
-                                    {object.language}
+                            <div key={categorie.language} className="h-44 flex flex-col gap-4 grow bg-black text-white p-4 rounded-2xl transition-all ease-in-out duration-700 hover:grow-[100]">
+                                <div>categorie
+                                    {categorie.language}
                                 </div>
-                                <div key={object.language} className="h-44 flex flex-row gap-4 items-center justify-center grow bg-black text-white rounded-2xl bg-transparent transition-all ease-in-out duration-700 hover:grow-[100]">
-                                    {object.projects.map((item) => {
+                                <div key={categorie.language} className="h-44 flex flex-row gap-4 items-center justify-center grow bg-black text-white rounded-2xl bg-transparent transition-all ease-in-out duration-700 hover:grow-[100]">
+                                    {categorie.projects.map((project) => {
 
                                         return (
-                                            <a key={item} href="#" className="min-w-4 h-full flex items-center justify-center text-center grow bg-white text-black p-4 rounded-2xl transition-all ease-in-out duration-700 cursor-pointer hover:grow-[100] hover:scale-105">
-                                                {item}
+                                            <a key={project.name} href={project.url} target="_blank" className="min-w-4 h-full flex items-center justify-center text-center grow bg-white text-black p-4 rounded-2xl transition-all ease-in-out duration-700 cursor-pointer hover:grow-[100] hover:scale-105">
+                                                {project.name}
                                             </a>
                                         )
                                     })}
@@ -61,14 +75,14 @@ function Projects() {
 
                 {/* Mobile */}
                 <div className="mobileProjects hidden w-full flex flex-row flex-wrap gap-2">
-                    {categories.map((object) => {
+                    {categories.map((categorie) => {
 
                         return (
-                            object.projects.map((item) => {
+                            categorie.projects.map((project) => {
 
                                 return (
-                                    <a key={item} className="text-center bg-black text-white p-4 rounded-2xl grow transition-all cursor-pointer hover:scale-105">
-                                        {item}
+                                    <a key={project.name} href={project.url} target="_blank" className="text-center bg-black text-white p-4 rounded-2xl grow transition-all cursor-pointer hover:scale-105">
+                                        {project.name}
                                     </a>
                                 )
                             })

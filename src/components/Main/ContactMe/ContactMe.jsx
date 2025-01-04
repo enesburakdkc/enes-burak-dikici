@@ -14,12 +14,12 @@ function ContactMe() {
                 <div className="formContainer flex flex-row gap-8 justify-between">
                     <form action={"https://formsubmit.co/" + email} method="POST" className="flex flex-col grow gap-4">
                         <label htmlFor="name" className="mb-[-0.5rem]">Ad Soyad:</label>
-                        <input type="text" name="name" placeholder="Ad Soyad" required className="p-1 bg-white text-black rounded-md focus:ring focus:ring-gray-300 focus:outline-none focus:drop-shadow-[0_0_7px_rgba(255,255,255,1)] invalid:ring-red-500 invalid:text-red-500 transition-all hover:drop-shadow-[0_0_7px_rgba(255,255,255,1)]" />
+                        <input type="text" name="name" placeholder="Ad Soyad" required className="p-2 bg-white text-black rounded-md focus:ring focus:ring-gray-300 focus:outline-none focus:drop-shadow-[0_0_7px_rgba(255,255,255,1)] invalid:ring-red-500 invalid:text-red-500 transition-all hover:drop-shadow-[0_0_7px_rgba(255,255,255,1)]" />
                         <label htmlFor="email" className="mb-[-0.5rem]">E-Posta:</label>
-                        <input type="email" name="email" placeholder="ornek@gmail.com" required className="p-1 bg-white text-black rounded-md focus:ring focus:ring-gray-300 focus:outline-none focus:drop-shadow-[0_0_7px_rgba(255,255,255,1)] invalid:ring-red-500 invalid:text-red-500 transition-all hover:drop-shadow-[0_0_7px_rgba(255,255,255,1)]" />
+                        <input type="email" name="email" placeholder="ornek@gmail.com" required className="p-2 bg-white text-black rounded-md focus:ring focus:ring-gray-300 focus:outline-none focus:drop-shadow-[0_0_7px_rgba(255,255,255,1)] invalid:ring-red-500 invalid:text-red-500 transition-all hover:drop-shadow-[0_0_7px_rgba(255,255,255,1)]" />
                         <label htmlFor="message" className="mb-[-0.5rem]">Mesaj:</label>
-                        <textarea name="message" placeholder="Mesaj" required className="min-h-28 p-1 bg-white text-black rounded-md focus:ring focus:ring-gray-300 focus:outline-none focus:drop-shadow-[0_0_7px_rgba(255,255,255,1)] invalid:ring-red-500 invalid:text-red-500 transition-all hover:drop-shadow-[0_0_7px_rgba(255,255,255,1)]" />
-                        <button type="submit" className="p-1 mt-2 bg-white text-black rounded-md focus:ring focus:ring-gray-300 focus:outline-none focus:drop-shadow-[0_0_7px_rgba(255,255,255,1)] transition-all hover:drop-shadow-[0_0_7px_rgba(255,255,255,1)]">Gönder</button>
+                        <textarea name="message" placeholder="Mesaj" required className="min-h-28 p-2 bg-white text-black rounded-md focus:ring focus:ring-gray-300 focus:outline-none focus:drop-shadow-[0_0_7px_rgba(255,255,255,1)] invalid:ring-red-500 invalid:text-red-500 transition-all hover:drop-shadow-[0_0_7px_rgba(255,255,255,1)]" />
+                        <button type="submit" className="p-2 mt-2 bg-white text-black rounded-md focus:ring focus:ring-gray-300 focus:outline-none focus:drop-shadow-[0_0_7px_rgba(255,255,255,1)] transition-all hover:drop-shadow-[0_0_7px_rgba(255,255,255,1)]">Gönder</button>
                     </form>
                     <div className="contactSocial pt-8 flex grow-0 rounded-md ">
                         <ul className="flex flex-col justify-between">

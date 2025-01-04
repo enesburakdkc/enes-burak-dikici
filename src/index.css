@@ -45,7 +45,7 @@
 }
 
 :root {
-    @apply m-0 p-0 bg-white scroll-smooth
+    @apply m-0 p-0 bg-white scroll-smooth select-none
 }
 
 body {

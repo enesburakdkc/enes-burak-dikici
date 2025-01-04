@@ -156,4 +156,22 @@ body {
     .name {
         @apply text-5xl
     }
+
+    .formContainer {
+        @apply flex-col
+    }
+
+    .formContainer .contactSocial {
+        @apply pt-0 grow
+    }
+
+    .formContainer .contactSocial ul {
+        @apply w-full flex-row
+    }
+}
+
+@media (max-width: 350px) {
+    .formContainer {
+        @apply gap-5
+    }
 }

@@ -38,7 +38,7 @@ function Projects() {
                                     {categorie.projects.map((project) => {
 
                                         return (
-                                            <a key={project.name} href={project.url} target="_blank" className="min-w-4 h-full flex items-center justify-center text-center grow bg-white text-black p-4 rounded-2xl transition-all ease-in-out duration-700 cursor-pointer hover:grow-[100] hover:scale-105">
+                                            <a key={project.name} href={project.url} target="_blank" className="min-w-4 h-full flex items-center justify-center text-center grow bg-white text-black p-4 rounded-2xl transition-all ease-in-out duration-700 cursor-pointer hover:grow-[100]">
                                                 {project.name}
                                             </a>
                                         )
@@ -55,14 +55,14 @@ function Projects() {
 
                         return (
                             <div key={categorie.language} className="h-44 flex flex-col gap-4 grow bg-black text-white p-4 rounded-2xl transition-all ease-in-out duration-700 hover:grow-[100]">
-                                <div>categorie
+                                <div>
                                     {categorie.language}
                                 </div>
                                 <div key={categorie.language} className="h-44 flex flex-row gap-4 items-center justify-center grow bg-black text-white rounded-2xl bg-transparent transition-all ease-in-out duration-700 hover:grow-[100]">
                                     {categorie.projects.map((project) => {
 
                                         return (
-                                            <a key={project.name} href={project.url} target="_blank" className="min-w-4 h-full flex items-center justify-center text-center grow bg-white text-black p-4 rounded-2xl transition-all ease-in-out duration-700 cursor-pointer hover:grow-[100] hover:scale-105">
+                                            <a key={project.name} href={project.url} target="_blank" className="min-w-4 h-full flex items-center justify-center text-center grow bg-white text-black p-4 rounded-2xl transition-all ease-in-out duration-700 cursor-pointer hover:grow-[100]">
                                                 {project.name}
                                             </a>
                                         )
@@ -81,7 +81,7 @@ function Projects() {
                             categorie.projects.map((project) => {
 
                                 return (
-                                    <a key={project.name} href={project.url} target="_blank" className="text-center bg-black text-white p-4 rounded-2xl grow transition-all cursor-pointer hover:scale-105">
+                                    <a key={project.name} href={project.url} target="_blank" className="text-center bg-black text-white p-4 rounded-2xl grow transition-all cursor-pointer">
                                         {project.name}
                                     </a>
                                 )

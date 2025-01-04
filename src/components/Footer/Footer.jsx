@@ -3,8 +3,9 @@ import { faPhone, faEnvelope } from "@fortawesome/free-solid-svg-icons"
 import { faWhatsapp, faGithub, faLinkedinIn } from "@fortawesome/free-brands-svg-icons"
 
 function Footer() {
+    
     return (
-        <footer className="bg-black text-white mt-20 py-8">
+        <footer className="footer bg-black text-white mt-20 py-8">
             <div className="footerContainer max-w-[65vw] mx-auto pl-[5vw]">
 
                 {/* Footer Top Section */}

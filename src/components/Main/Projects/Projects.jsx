@@ -3,21 +3,27 @@
 function Projects() {
 
     const categories = [
-        { language: "PHP", projects: [
-            { name: "Comic Book", url: "#"},
-        ]},
-        { language: "JavaScript", projects: [
-            { name: "Small Projects", url: "small-js-projects/"}, 
-            { name: "Calculator", url: "small-js-projects/calculator/"}, 
-            { name: "Weather App", url: "js-weather-app/"},
-        ]},
-        { language: "React", projects: [
-            { name: "Counter", url: "#"},
-            { name: "Color Picker", url: "#"},
-            { name: "To Do List", url: "#"},
-            { name: "Digital Clock", url: "#"},
-            { name: "Portfolio", url: "/"},
-        ]},
+        {
+            language: "PHP", projects: [
+                { name: "Comic Book", url: "#" },
+            ]
+        },
+        {
+            language: "JavaScript", projects: [
+                { name: "Small Projects", url: "small-js-projects/" },
+                { name: "Calculator", url: "small-js-projects/calculator/" },
+                { name: "Weather App", url: "js-weather-app/" },
+            ]
+        },
+        {
+            language: "React", projects: [
+                { name: "Counter", url: "#" },
+                { name: "Color Picker", url: "#" },
+                { name: "To Do List", url: "#" },
+                { name: "Digital Clock", url: "#" },
+                { name: "Portfolio", url: "/" },
+            ]
+        },
     ]
 
     return (
@@ -74,18 +80,25 @@ function Projects() {
                 </div>
 
                 {/* Mobile */}
-                <div className="mobileProjects hidden w-full flex flex-row flex-wrap gap-2">
+                <div className="mobileProjects hidden w-full flex flex-col gap-4">
                     {categories.map((categorie) => {
 
                         return (
-                            categorie.projects.map((project) => {
 
-                                return (
-                                    <a key={project.name} href={project.url} target="_blank" className="text-center bg-black text-white p-4 rounded-2xl grow transition-all cursor-pointer">
-                                        {project.name}
-                                    </a>
-                                )
-                            })
+                            <div key={categorie.language} className="flex p-4 flex-col gap-2 bg-black rounded-2xl">
+                                <p className="font-semibold text-white mb-2">{categorie.language}</p>
+
+                                <div className="flex flex-row gap-2 flex-wrap">
+                                    {categorie.projects.map((project) => {
+
+                                        return (
+                                            <a key={project.name} href={project.url} target="_blank" className="text-center bg-white text-black py-2 px-4 rounded-2xl grow transition-all cursor-pointer">
+                                                {project.name}
+                                            </a>
+                                        )
+                                    })}
+                                </div>
+                            </div>
                         )
                     })}
                 </div>

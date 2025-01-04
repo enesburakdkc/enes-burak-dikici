@@ -93,16 +93,12 @@ body {
         @apply justify-center bg-black text-white
     }
 
-    .about {
+    .about, .skills, .projects, .contact, .footer {
         @apply mt-12
     }
 
     .about, .about div {
         @apply max-h-none
-    }
-
-    .skills {
-        @apply mt-12
     }
 
     .skills, .skills div {

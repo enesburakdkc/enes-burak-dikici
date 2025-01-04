@@ -21,7 +21,7 @@ function Projects() {
     ]
 
     return (
-        <section id="projects" className="projects w-full min-h-[calc(100vh-6rem)] max-h-[calc(100vh-6rem)] flex flex-row justify-evenly items-center">
+        <section id="projects" className="projects w-full min-h-[100vh] max-h-[calc(100vh-6rem)] flex flex-row justify-evenly items-center">
             <div className="w-full max-h-[calc(100vh-6rem)] font-light ">
                 <h2 className="text-4xl font-medium">Projeler</h2>
                 <br />

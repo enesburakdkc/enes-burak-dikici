@@ -7,7 +7,7 @@ function ContactMe() {
     const email = "dikicienesburak@gmail.com"
 
     return (
-        <section id="contact" className="contact projects min-h-[calc(100vh-6rem)] max-h-[calc(100vh-6rem)] flex flex-row justify-evenly items-center">
+        <section id="contact" className="contact projects min-h-[100vh] max-h-[calc(100vh-6rem)] flex flex-row justify-evenly items-center">
             <div className="w-full max-h-[calc(100vh-6rem)] font-light bg-black text-white p-8 box-border rounded-2xl">
                 <h2 className="text-4xl font-medium">İletişim</h2>
                 <br />

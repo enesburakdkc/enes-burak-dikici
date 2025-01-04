@@ -144,7 +144,7 @@ body {
     }
 }
 
-@media (max-width: 550px) {
+@media (max-width: 620px) {
     .navbar {
         @apply justify-between px-10
     }

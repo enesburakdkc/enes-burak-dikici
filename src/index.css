@@ -80,7 +80,7 @@ body {
     }
 
     .footerContainer {
-        @apply max-w-[85vw]
+        @apply max-w-[85vw] px-0
     }
 }
 

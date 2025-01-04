@@ -78,6 +78,10 @@ body {
     .homeContent {
         @apply mt-10
     }
+
+    .footerContainer {
+        @apply max-w-[85vw]
+    }
 }
 
 @media (max-width: 770px) {
@@ -127,6 +131,10 @@ body {
 
     .mobileProjects {
         @apply flex
+    }
+
+    .footerContainer .footerTop {
+        @apply flex-col items-center
     }
 }
 

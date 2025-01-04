@@ -23,7 +23,7 @@ function Projects() {
     return (
         <section id="projects" className="projects w-full min-h-[calc(100vh-6rem)] max-h-[calc(100vh-6rem)] flex flex-row justify-evenly items-center">
             <div className="w-full max-h-[calc(100vh-6rem)] font-light ">
-                <h2 className="text-4xl font-medium">Projects</h2>
+                <h2 className="text-4xl font-medium">Projeler</h2>
                 <br />
                 <div className="desktopProjects w-full flex flex-row gap-4 font-normal">
 

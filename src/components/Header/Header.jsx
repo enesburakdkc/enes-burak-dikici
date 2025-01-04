@@ -9,11 +9,11 @@ function Header() {
     const [isMenuClosing, setIsMenuClosing] = useState(true)
 
     const categories = [
-        { id: 'home', name: 'Home' },
-        { id: 'about', name: 'About' },
-        { id: 'skills', name: 'Skills' },
-        { id: 'projects', name: 'Projects' },
-        { id: 'contact', name: 'Contact Me' }];
+        { id: 'home', name: 'Ana Sayfa' },
+        { id: 'about', name: 'Hakkımda' },
+        { id: 'skills', name: 'Yetenekler' },
+        { id: 'projects', name: 'Projeler' },
+        { id: 'contact', name: 'İletişim' }];
 
     const toggleMenu = () => {
         isMenuOpen ? setTimeout(() => {setIsMenuOpen(false)}, 1200) : setIsMenuOpen(true)

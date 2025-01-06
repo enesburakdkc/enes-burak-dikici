@@ -5,7 +5,7 @@ function Projects() {
     const categories = [
         {
             language: "PHP", projects: [
-                { name: "Comic Book", url: "#" },
+                { name: "Comic Book", url: "ceviri-manga/" },
             ]
         },
         {

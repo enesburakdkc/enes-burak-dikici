@@ -11,7 +11,7 @@ function Projects() {
         {
             language: "JavaScript", projects: [
                 { name: "Small Projects", url: "small-js-projects/" },
-                { name: "Calculator", url: "small-js-projects/calculator/" },
+                { name: "Calculator", url: "js-calculator/" },
                 { name: "Weather App", url: "js-weather-app/" },
             ]
         },

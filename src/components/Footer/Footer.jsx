@@ -3,7 +3,21 @@ import { faPhone, faEnvelope } from "@fortawesome/free-solid-svg-icons"
 import { faWhatsapp, faGithub, faLinkedinIn } from "@fortawesome/free-brands-svg-icons"
 
 function Footer() {
-    
+
+    const categories = [
+        { id: 'home', name: 'Ana Sayfa' },
+        { id: 'about', name: 'Hakkımda' },
+        { id: 'skills', name: 'Yetenekler' },
+        { id: 'projects', name: 'Projeler' },
+        { id: 'contact', name: 'İletişim' }]
+
+    const handleScroll = (id) => {
+        const element = document.getElementById(id)
+        if (element) {
+            window.scrollTo({ top: element.offsetTop, behavior: 'smooth' })
+        }
+    }
+
     return (
         <footer className="footer bg-black text-white mt-20 py-8">
             <div className="footerContainer max-w-[65vw] mx-auto pl-[5vw]">
@@ -15,21 +29,13 @@ function Footer() {
                     <div className="text-center md:text-left">
                         <h3 className="text-lg font-semibold mb-4">Hızlı Erişim</h3>
                         <ul className="space-y-2">
-                            <li className="transition-all hover:drop-shadow-[0_0_7px_rgba(255,255,255,1)] hover:scale-105">
-                                <a href="#home">Ana Sayfa</a>
-                            </li>
-                            <li className="transition-all hover:drop-shadow-[0_0_7px_rgba(255,255,255,1)] hover:scale-105">
-                                <a href="#about">Hakkımda</a>
-                            </li>
-                            <li className="transition-all hover:drop-shadow-[0_0_7px_rgba(255,255,255,1)] hover:scale-105">
-                                <a href="#skills">Yetenekler</a>
-                            </li>
-                            <li className="transition-all hover:drop-shadow-[0_0_7px_rgba(255,255,255,1)] hover:scale-105">
-                                <a href="#projects">Projeler</a>
-                            </li>
-                            <li className="transition-all hover:drop-shadow-[0_0_7px_rgba(255,255,255,1)] hover:scale-105">
-                                <a href="#contact">İletişim</a>
-                            </li>
+                            {categories.map((categorie) => {
+                                return (
+                                    <li key={categorie.id} className="cursor-pointer transition-all hover:drop-shadow-[0_0_7px_rgba(255,255,255,1)] hover:scale-105">
+                                        <a onClick={() => handleScroll(categorie.id)}>{categorie.name}</a>
+                                    </li>
+                                )
+                            })}
                         </ul>
                     </div>
 

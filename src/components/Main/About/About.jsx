@@ -15,7 +15,7 @@ function About() {
                 </p>
                 <br />
                 <p>
-                    Şu anda, React, Node.js ve MongoDB gibi teknolojilerle Full-Stack yazılım
+                    Şu anda Tailwind CSS, React, Node.js ve MongoDB gibi teknolojilerle Full-Stack yazılım
                     geliştirici olarak küçük bir start-up projesinde aktif olarak çalışıyorum.
                     Versiyon kontrol sistemleri için Git ve GitHub kullanıyorum.
                 </p>

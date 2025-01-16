@@ -24,9 +24,10 @@ function Projects() {
         },
         {
             language: "React", projects: [
-                { name: "Color Picker", url: "#", clickable: true },
-                { name: "To Do List", url: "#", clickable: true },
-                { name: "Digital Clock", url: "#", clickable: true },
+                { name: "Counter", url: "react-counter/", clickable: true },
+                { name: "Color Picker", url: "react-color-picker/", clickable: true },
+                { name: "To Do List", url: "react-tailwind-to-do-list/", clickable: true },
+                { name: "Digital Clock", url: "react-tailwind-digital-clock/", clickable: true },
                 { name: "Portfolio", url: "/", clickable: true },
                 { name: "Start-Up", url: "#", clickable: false },
             ]

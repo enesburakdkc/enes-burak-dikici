@@ -29,7 +29,7 @@ function Header() {
         }
     }
 
-    const handleScroll = (id) => {
+    const  handleScroll = (id) => {
         const element = document.getElementById(id)
         if (element) {
             lastScrollY > element.offsetTop ? window.scrollTo({ top: element.offsetTop - 96, behavior: 'smooth' }) : window.scrollTo({ top: element.offsetTop, behavior: 'smooth' })

@@ -4,24 +4,31 @@ function Projects() {
 
     const categories = [
         {
+            language: "WordPress", projects: [
+                { name: "Hotel", url: "https://tepeseobeta.online/zeugma/", clickable: true },
+                { name: "Staticex", url: "https://tepeseobeta.online/staticex/", clickable: true },
+                { name: "Karahan", url: "#", clickable: true },
+            ]
+        },
+        {
             language: "PHP", projects: [
-                { name: "Comic Book", url: "ceviri-manga/" },
+                { name: "Comic Book", url: "ceviri-manga/", clickable: true },
             ]
         },
         {
             language: "JavaScript", projects: [
-                { name: "Small Projects", url: "small-js-projects/" },
-                { name: "Calculator", url: "js-calculator/" },
-                { name: "Weather App", url: "js-weather-app/" },
+                { name: "Small Projects", url: "small-js-projects/", clickable: true },
+                { name: "Calculator", url: "js-calculator/", clickable: true },
+                { name: "Weather App", url: "js-weather-app/", clickable: true },
             ]
         },
         {
             language: "React", projects: [
-                { name: "Counter", url: "#" },
-                { name: "Color Picker", url: "#" },
-                { name: "To Do List", url: "#" },
-                { name: "Digital Clock", url: "#" },
-                { name: "Portfolio", url: "/" },
+                { name: "Color Picker", url: "#", clickable: true },
+                { name: "To Do List", url: "#", clickable: true },
+                { name: "Digital Clock", url: "#", clickable: true },
+                { name: "Portfolio", url: "/", clickable: true },
+                { name: "Start-Up", url: "#", clickable: false },
             ]
         },
     ]
@@ -33,18 +40,42 @@ function Projects() {
                 <br />
                 <div className="desktopProjects w-full flex flex-row gap-4 font-normal">
 
-                    {categories.slice(0, 2).map((categorie) => {
+                    {categories.slice(0, 1).map((categorie) => {
 
                         return (
-                            <div key={categorie.language} className="h-44 flex flex-col gap-4 grow bg-black text-white p-4 rounded-2xl transition-all ease-in-out duration-700 hover:grow-[100]">
+                            <div key={categorie.language} className="h-36 flex flex-col gap-4 grow bg-black text-white p-4 rounded-2xl transition-all duration-700 hover:grow-[100]">
                                 <div>
                                     {categorie.language}
                                 </div>
-                                <div key={categorie.language} className="h-44 flex flex-row gap-4 items-center justify-center grow bg-black text-white rounded-2xl bg-transparent transition-all ease-in-out duration-700 hover:grow-[100]">
+                                <div key={categorie.language} className="h-36 flex flex-row gap-4 items-center justify-center grow bg-black text-white rounded-2xl bg-transparent transition-all duration-700 hover:grow-[100]">
                                     {categorie.projects.map((project) => {
 
                                         return (
-                                            <a key={project.name} href={project.url} target="_blank" className="min-w-4 h-full flex items-center justify-center text-center grow bg-white text-black p-4 rounded-2xl transition-all ease-in-out duration-700 cursor-pointer hover:grow-[100]">
+                                            <a key={project.name} href={project.clickable ? project.url : undefined} target="_blank" className={`min-w-4 h-full flex items-center justify-center text-center grow bg-white text-black p-4 rounded-2xl transition-all duration-700 cursor-pointer hover:grow-[100] ${!project.clickable ? 'cursor-not-allowed hover:bg-red-500' : 'cursor-pointer'}`}>
+                                                {project.name}
+                                            </a>
+                                        )
+                                    })}
+                                </div>
+                            </div>
+                        )
+                    })}
+                </div>
+
+                <div className="desktopProjects w-full flex flex-row gap-4 mt-4 font-normal">
+
+                    {categories.slice(1, 3).map((categorie) => {
+
+                        return (
+                            <div key={categorie.language} className="h-36 flex flex-col gap-4 grow bg-black text-white p-4 rounded-2xl transition-all duration-700 hover:grow-[100]">
+                                <div>
+                                    {categorie.language}
+                                </div>
+                                <div key={categorie.language} className="h-36 flex flex-row gap-4 items-center justify-center grow bg-black text-white rounded-2xl bg-transparent transition-all duration-700 hover:grow-[100]">
+                                    {categorie.projects.map((project) => {
+
+                                        return (
+                                            <a key={project.name} href={project.clickable ? project.url : undefined} target="_blank" className={`min-w-4 h-full flex items-center justify-center text-center grow bg-white text-black p-4 rounded-2xl transition-all duration-700 cursor-pointer hover:grow-[100] ${!project.clickable ? 'cursor-not-allowed hover:bg-red-500' : 'cursor-pointer'}`}>
                                                 {project.name}
                                             </a>
                                         )
@@ -57,18 +88,18 @@ function Projects() {
 
                 <div className="desktopProjects w-full flex flex-row gap-2 mt-4 font-normal">
 
-                    {categories.slice(2, 3).map((categorie) => {
+                    {categories.slice(3, 4).map((categorie) => {
 
                         return (
-                            <div key={categorie.language} className="h-44 flex flex-col gap-4 grow bg-black text-white p-4 rounded-2xl transition-all ease-in-out duration-700 hover:grow-[100]">
+                            <div key={categorie.language} className="h-36 flex flex-col gap-4 grow bg-black text-white p-4 rounded-2xl transition-all duration-700 hover:grow-[100]">
                                 <div>
                                     {categorie.language}
                                 </div>
-                                <div key={categorie.language} className="h-44 flex flex-row gap-4 items-center justify-center grow bg-black text-white rounded-2xl bg-transparent transition-all ease-in-out duration-700 hover:grow-[100]">
+                                <div key={categorie.language} className="h-36 flex flex-row gap-4 items-center justify-center grow bg-black text-white rounded-2xl bg-transparent transition-all duration-700 hover:grow-[100]">
                                     {categorie.projects.map((project) => {
 
                                         return (
-                                            <a key={project.name} href={project.url} target="_blank" className="min-w-4 h-full flex items-center justify-center text-center grow bg-white text-black p-4 rounded-2xl transition-all ease-in-out duration-700 cursor-pointer hover:grow-[100]">
+                                            <a key={project.name} href={project.clickable ? project.url : undefined} target="_blank" className={`min-w-4 h-full flex items-center justify-center text-center grow bg-white text-black p-4 rounded-2xl transition-all duration-700 hover:grow-[100] ${!project.clickable ? 'cursor-not-allowed hover:bg-red-500' : 'cursor-pointer'}`}>
                                                 {project.name}
                                             </a>
                                         )
@@ -92,7 +123,7 @@ function Projects() {
                                     {categorie.projects.map((project) => {
 
                                         return (
-                                            <a key={project.name} href={project.url} target="_blank" className="text-center bg-white text-black py-2 px-4 rounded-2xl grow transition-all cursor-pointer">
+                                            <a key={project.name} href={project.clickable ? project.url : undefined} target="_blank" className={`text-center bg-white text-black py-2 px-4 rounded-2xl grow transition-all cursor-pointer ${!project.clickable ? 'cursor-not-allowed hover:bg-red-500' : 'cursor-pointer'}`}>
                                                 {project.name}
                                             </a>
                                         )

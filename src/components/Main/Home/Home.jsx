@@ -10,10 +10,10 @@ function Home() {
             <div className="homeContent h-96 flex flex-col gap-8 justify-evenly items-start mt-5">
                 <div className="flex flex-col gap-5">
                     <h1 className="name text-5xl font-semibold">Enes Burak Dikici</h1>
-                    <h2 className="text-xl font-medium">Front-End Developer</h2>
-                    <p className="text-xl font-medium">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur ipsum ab nobis possimus explicabo vel?</p>
+                    <h2 className="text-xl font-medium">Front-End React Geliştirici</h2>
+                    <p className="text-xl font-medium">React kütüphanesi üzerinde uzmanlaşan bir Frontend yazılım geliştiricisiyim.</p>
                 </div>
-                <a href="https://wa.me/905379760543" target="_blank" className="bg-black text-xl text-white p-5 rounded-xl drop-shadow-lg transition-all hover:scale-105">İletişim &nbsp;<FontAwesomeIcon icon={faLocationArrow} style={{ scale: '1.5', marginLeft: '0.5rem' }} /></a>
+                <a href="https://wa.me/905379760543" target="_blank" className="bg-black text-xl text-white p-5 rounded-xl drop-shadow-lg transition-all hover:scale-105">İletişim &nbsp;<FontAwesomeIcon icon={faLocationArrow} className="ml-3 scale-150" /></a>
                 <div className="social flex flex-row gap-8 ml-4 hidden">
                     <a href="https://github.com/enesburakdkc" target="_blank"><FontAwesomeIcon icon={faGithub} size="2x" className="transition-all cursor-pointer hover:scale-105 hover:drop-shadow-lg" /></a>
                     <a href="https://www.linkedin.com/in/enes-burak-dikici-48589b254/" target="_blank"><FontAwesomeIcon icon={faLinkedinIn} size="2x" className="transition-all cursor-pointer hover:scale-105 hover:drop-shadow-lg" /></a>

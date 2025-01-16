@@ -6,11 +6,25 @@ function About() {
             <div className="max-h-[calc(100vh-6rem)] font-light bg-black text-white p-8 rounded-2xl">
                 <h2 className="text-4xl font-medium">Hakkımda</h2>
                 <br />
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat totam corrupti praesentium consequuntur? Sint dolor velit culpa commodi consectetur excepturi totam id tenetur omnis corporis. Maiores magni optio neque corrupti suscipit? Qui et vel earum voluptatem est. Eius, alias natus. Ipsa magni atque vel quasi quisquam fugit eum necessitatibus at quas voluptates, odit sit iure recusandae ipsum doloribus! Aspernatur voluptates molestias magnam, sint expedita quisquam atque facilis namodit reprehenderit porro itaque reprehenderit error!</p>
+                <p>
+                    React kütüphanesi üzerinde uzmanlaşan bir Frontend yazılım geliştiricisiyim.
+                    Daha önce PHP ve MySQL ile gerçek projeler geliştirdim. Bir yıl boyunca bir
+                    şirkette SEO & SEM Uzmanı ve Frontend Developer olarak çalıştım. Bu
+                    süreçte yapay zeka API bağlantıları kullanarak SEO araçları geliştirdim ve
+                    müşterilerimize özel WordPress web siteleri tasarladım.
+                </p>
                 <br />
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat totam corrupti praesentium consequuntur? Sint dolor velit culpa commodi consectetur excepturi totam id tenetur omnis corporis. Maiores magni optio neque corrupti accusantium, quas tempora non facilis quisquam, repudiandae natus quod laborum aperiam ad pariatur obcaecati rem eum neque labore unde, id dolore itaque sit? Incidunt quam magnam pariatur non corporis minima delectus repellat quae deserunt, dolorum facere. Animi ratione mollitia dolore nulla dolorum, natus iste quo fugiat temporibus reprehenderit error!</p>
+                <p>
+                    Şu anda, React, Node.js ve MongoDB gibi teknolojilerle Full-Stack yazılım
+                    geliştirici olarak küçük bir start-up projesinde aktif olarak çalışıyorum.
+                    Versiyon kontrol sistemleri için Git ve GitHub kullanıyorum.
+                </p>
                 <br />
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat totam corrupti praesentium consequuntur? Sint dolor velit culpa commodi consectetur excepturi totam id tenetur omnis corporis. Maiores magni optio neque corrupti suscipit? Qui et vel earum accusantium quisquam atque facilis namodit reprehenderit porro itaque deserunt, dolorum facere. Animi ratione mollitia dolore nulla dolorum, natus iste quo fugiat temporibus reprehenderit error!</p>
+                <p>
+                    Kendimi geliştirebileceğim ve verimli çalışmalara imza atabileceğim takım
+                    arkadaşları arıyorum. Projelerimi bir arada derlemek amacıyla React ile
+                    kodladığım bu sitede projelerime göz atabilirsiniz.
+                </p>
             </div>
         </section>
     )

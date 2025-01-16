@@ -5,12 +5,16 @@ import { faHtml5, faCss3Alt, faJs, faReact, faPhp, faWordpress } from "@fortawes
 function Skills() {
 
     return (
-        <section id="skills" className="skills min-h-[100vh] max-h-[calc(100vh-6rem)] flex flex-col gap-12 justify-center items-center font-light text-white">
-            <div className="max-h-[calc(100vh-6rem)] flex flex-row gap-12 justify-between items-center font-light text-white">
-                <div className="max-max-h-[calc(100vh-6rem)] bg-black p-8 rounded-2xl">
+        <section id="skills" className="skills min-h-[100vh] max-h-[calc(100vh-6rem)] flex flex-col gap-12 justify-center font-light text-white">
+            <div className="max-h-[calc(100vh-6rem)] flex flex-row gap-24 justify-between items-center font-light text-white">
+                <div className="w-full max-h-[calc(100vh-6rem)] bg-black p-8 rounded-2xl">
                     <h2 className="text-4xl font-medium">Yetenekler</h2>
                     <br />
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat totam corrupti praesentium consequuntur? Sint dolor velit culpa commodi consectetur excepturi totam id tenetur omnis corporis. Maiores magni optio neque corrupti suscipit? Qui et vel earum voluptatem est. Eius, alias natus. Ipsa magni atque vel quasi quisquam fugit eum necessitatibus at quas voluptates, odit sit iure recusandae ipsum doloribus! Aspernatur voluptates molestias magnam, sint expedita quisquam atque facilis namodit reprehenderit porro itaque reprehenderit error!</p>
+                    <ul className="flex flex-col gap-4">
+                        <li><span className="font-semibold">Frontend:</span> HTML5, CSS3, JavaScript ES6, React.js</li>
+                        <li><span className="font-semibold">Backend:</span> PHP, Node.js</li>
+                        <li><span className="font-semibold">Database:</span> MySQL, MongoDB</li>
+                    </ul>
                 </div>
 
                 <ul className="icons-temporal grid grid-cols-2 gap-20 text-black py-8 px-12 place-items-center">

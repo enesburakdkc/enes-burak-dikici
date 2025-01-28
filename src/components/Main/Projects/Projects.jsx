@@ -32,6 +32,12 @@ function Projects() {
                 { name: "Start-Up", url: "#", clickable: false },
             ]
         },
+        {
+            language: "Vue", projects: [
+                { name: "Counter", url: "vue-tailwind-counter/", clickable: true },
+                { name: "To Do List", url: "vue-tailwind-to-do-list/", clickable: true },
+            ]
+        },
     ]
 
     return (
@@ -87,11 +93,10 @@ function Projects() {
                     })}
                 </div>
 
-                <div className="desktopProjects w-full flex flex-row gap-2 mt-4 font-normal">
-
-                    {categories.slice(3, 4).map((categorie) => {
-
-                        return (
+                {categories.slice(3, 5).map((categorie) => {
+                    
+                    return (
+                        <div className="desktopProjects w-full flex flex-row gap-2 mt-4 font-normal">
                             <div key={categorie.language} className="h-36 flex flex-col gap-4 grow bg-black text-white p-4 rounded-2xl transition-all duration-700 hover:grow-[100]">
                                 <div>
                                     {categorie.language}
@@ -107,9 +112,9 @@ function Projects() {
                                     })}
                                 </div>
                             </div>
-                        )
-                    })}
-                </div>
+                        </div>
+                    )
+                })}
 
                 {/* Mobile */}
                 <div className="mobileProjects hidden w-full flex flex-col gap-4">

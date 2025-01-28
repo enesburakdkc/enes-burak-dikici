@@ -36,6 +36,7 @@ function Projects() {
             language: "Vue", projects: [
                 { name: "Counter", url: "vue-tailwind-counter/", clickable: true },
                 { name: "To Do List", url: "vue-tailwind-to-do-list/", clickable: true },
+                { name: "Weather App", url: "vue-tailwind-weather-app/", clickable: true },
             ]
         },
     ]

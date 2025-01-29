@@ -10,8 +10,8 @@ function Home() {
             <div className="homeContent h-96 flex flex-col gap-8 justify-evenly items-start mt-5">
                 <div className="flex flex-col gap-5">
                     <h1 className="name text-5xl font-semibold">Enes Burak Dikici</h1>
-                    <h2 className="text-xl font-medium">Front-End React Geliştirici</h2>
-                    <p className="text-xl font-medium">React kütüphanesi üzerinde uzmanlaşan bir Frontend yazılım geliştiricisiyim.</p>
+                    <h2 className="text-xl font-medium">Front-End Geliştirici</h2>
+                    <p className="text-xl font-medium">React ve Vue gibi modern JavaScript kütüphaneleri üzerinde uzmanlaşan bir Frontend yazılım geliştiricisiyim.</p>
                 </div>
                 <a href="https://wa.me/905379760543" target="_blank" className="bg-black text-xl text-white p-5 rounded-xl drop-shadow-lg transition-all hover:scale-105">İletişim &nbsp;<FontAwesomeIcon icon={faLocationArrow} className="ml-3 scale-150" /></a>
                 <div className="social flex flex-row gap-8 ml-4 hidden">
@@ -21,9 +21,9 @@ function Home() {
                 </div>
             </div>
 
-            
+
             <img src={Portre} alt="Portre" className="portre min-w-96 h-96 object-cover rounded-[7rem] object-custom shadow-xl" />
-            
+
         </section>
     )
 }

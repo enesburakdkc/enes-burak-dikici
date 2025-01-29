@@ -7,16 +7,17 @@ function About() {
                 <h2 className="text-4xl font-medium">Hakkımda</h2>
                 <br />
                 <p>
-                    React kütüphanesi üzerinde uzmanlaşan bir Frontend yazılım geliştiricisiyim.
-                    Daha önce PHP ve MySQL ile gerçek projeler geliştirdim. Bir yıl boyunca bir
-                    şirkette SEO & SEM Uzmanı ve Frontend Developer olarak çalıştım. Bu
-                    süreçte yapay zeka API bağlantıları kullanarak SEO araçları geliştirdim ve
-                    müşterilerimize özel WordPress web siteleri tasarladım.
+                    React ve Vue gibi modern JavaScript kütüphaneleri üzerinde uzmanlaşan bir
+                    Frontend yazılım geliştiricisiyim. Daha önce PHP ve MySQL ile gerçek
+                    projeler geliştirdim. Bir yıl boyunca bir şirkette SEO & SEM Uzmanı ve
+                    Frontend Developer olarak çalıştım. Bu süreçte yapay zeka API bağlantıları
+                    kullanarak SEO araçları geliştirdim ve müşterilerimize özel WordPress web
+                    siteleri tasarladım.
                 </p>
                 <br />
                 <p>
-                    Şu anda Tailwind CSS, React, Node.js ve MongoDB gibi teknolojilerle Full-Stack yazılım
-                    geliştirici olarak küçük bir start-up projesinde aktif olarak çalışıyorum.
+                    Şu anda Tailwind CSS, React, Node.js ve MongoDB gibi teknolojilerle Full-
+                    Stack yazılım geliştirici olarak küçük bir start-up projesi üzerinde çalışıyorum.
                     Versiyon kontrol sistemleri için Git ve GitHub kullanıyorum.
                 </p>
                 <br />

@@ -11,7 +11,7 @@ function Skills() {
                     <h2 className="text-4xl font-medium">Yetenekler</h2>
                     <br />
                     <ul className="flex flex-col gap-4">
-                        <li><span className="font-semibold">Frontend:</span> HTML5, CSS3, Tailwind CSS, JavaScript ES6, React</li>
+                        <li><span className="font-semibold">Frontend:</span> HTML5, CSS3, Tailwind CSS, JavaScript ES6, React, Vue3</li>
                         <li><span className="font-semibold">Backend:</span> PHP, Node.js</li>
                         <li><span className="font-semibold">Database:</span> MySQL, MongoDB</li>
                     </ul>

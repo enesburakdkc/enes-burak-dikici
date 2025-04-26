@@ -1,13 +1,14 @@
-
+import { useState } from 'react';
+import Modal from '../Modal/Modal';
 
 function Projects() {
+    const [selectedMp4, setSelectedMp4] = useState(null);
 
     const categories = [
         {
             language: "WordPress", projects: [
                 { name: "Hotel", url: "https://tepeseobeta.online/zeugma/", clickable: true },
                 { name: "Staticex", url: "https://tepeseobeta.online/staticex/", clickable: true },
-                { name: "Karahan", url: "#", clickable: true },
             ]
         },
         {
@@ -23,20 +24,19 @@ function Projects() {
             ]
         },
         {
-            language: "React", projects: [
-                { name: "Counter", url: "react-counter/", clickable: true },
+            language: "React / Next", projects: [
                 { name: "Color Picker", url: "react-color-picker/", clickable: true },
                 { name: "To Do List", url: "react-tailwind-to-do-list/", clickable: true },
                 { name: "Digital Clock", url: "react-tailwind-digital-clock/", clickable: true },
                 { name: "Portfolio", url: "/", clickable: true },
-                { name: "Start-Up", url: "#", clickable: false },
+                { name: "Start-Up", url: "#", clickable: true, mp4: "loodo" },
             ]
         },
         {
-            language: "Vue", projects: [
-                { name: "Counter", url: "vue-tailwind-counter/", clickable: true },
+            language: "Vue3 / Nuxt3", projects: [
                 { name: "To Do List", url: "vue-tailwind-to-do-list/", clickable: true },
                 { name: "Weather App", url: "vue-tailwind-weather-app/", clickable: true },
+                { name: "EduDiamond", url: "https://kurs.edudiamond.com/", clickable: true },
             ]
         },
     ]
@@ -59,7 +59,18 @@ function Projects() {
                                     {categorie.projects.map((project) => {
 
                                         return (
-                                            <a key={project.name} href={project.clickable ? project.url : undefined} target="_blank" className={`min-w-4 h-full flex items-center justify-center text-center grow bg-white text-black p-4 rounded-2xl transition-all duration-700 cursor-pointer hover:grow-[100] ${!project.clickable ? 'cursor-not-allowed hover:bg-red-500' : 'cursor-pointer'}`}>
+                                            <a 
+                                                key={project.name} 
+                                                href={project.clickable ? project.url : undefined} 
+                                                target="_blank" 
+                                                onClick={(e) => {
+                                                    if (project.mp4) {
+                                                        e.preventDefault();
+                                                        setSelectedMp4(project.mp4);
+                                                    }
+                                                }}
+                                                className={`min-w-4 h-full flex items-center justify-center text-center grow bg-white text-black p-4 rounded-2xl transition-all duration-700 hover:grow-[100] ${!project.clickable ? 'cursor-not-allowed hover:bg-red-500' : 'cursor-pointer'}`}
+                                            >
                                                 {project.name}
                                             </a>
                                         )
@@ -83,7 +94,18 @@ function Projects() {
                                     {categorie.projects.map((project) => {
 
                                         return (
-                                            <a key={project.name} href={project.clickable ? project.url : undefined} target="_blank" className={`min-w-4 h-full flex items-center justify-center text-center grow bg-white text-black p-4 rounded-2xl transition-all duration-700 cursor-pointer hover:grow-[100] ${!project.clickable ? 'cursor-not-allowed hover:bg-red-500' : 'cursor-pointer'}`}>
+                                            <a 
+                                                key={project.name} 
+                                                href={project.clickable ? project.url : undefined} 
+                                                target="_blank" 
+                                                onClick={(e) => {
+                                                    if (project.mp4) {
+                                                        e.preventDefault();
+                                                        setSelectedMp4(project.mp4);
+                                                    }
+                                                }}
+                                                className={`min-w-4 h-full flex items-center justify-center text-center grow bg-white text-black p-4 rounded-2xl transition-all duration-700 hover:grow-[100] ${!project.clickable ? 'cursor-not-allowed hover:bg-red-500' : 'cursor-pointer'}`}
+                                            >
                                                 {project.name}
                                             </a>
                                         )
@@ -97,16 +119,27 @@ function Projects() {
                 {categories.slice(3, 5).map((categorie) => {
                     
                     return (
-                        <div className="desktopProjects w-full flex flex-row gap-2 mt-4 font-normal">
-                            <div key={categorie.language} className="h-36 flex flex-col gap-4 grow bg-black text-white p-4 rounded-2xl transition-all duration-700 hover:grow-[100]">
+                        <div key={categorie.language} className="desktopProjects w-full flex flex-row gap-2 mt-4 font-normal">
+                            <div className="h-36 flex flex-col gap-4 grow bg-black text-white p-4 rounded-2xl transition-all duration-700 hover:grow-[100]">
                                 <div>
                                     {categorie.language}
                                 </div>
-                                <div key={categorie.language} className="h-36 flex flex-row gap-4 items-center justify-center grow bg-black text-white rounded-2xl bg-transparent transition-all duration-700 hover:grow-[100]">
+                                <div className="h-36 flex flex-row gap-4 items-center justify-center grow bg-black text-white rounded-2xl bg-transparent transition-all duration-700 hover:grow-[100]">
                                     {categorie.projects.map((project) => {
 
                                         return (
-                                            <a key={project.name} href={project.clickable ? project.url : undefined} target="_blank" className={`min-w-4 h-full flex items-center justify-center text-center grow bg-white text-black p-4 rounded-2xl transition-all duration-700 hover:grow-[100] ${!project.clickable ? 'cursor-not-allowed hover:bg-red-500' : 'cursor-pointer'}`}>
+                                            <a 
+                                                key={project.name} 
+                                                href={project.clickable ? project.url : undefined} 
+                                                target="_blank" 
+                                                onClick={(e) => {
+                                                    if (project.mp4) {
+                                                        e.preventDefault();
+                                                        setSelectedMp4(project.mp4);
+                                                    }
+                                                }}
+                                                className={`min-w-4 h-full flex items-center justify-center text-center grow bg-white text-black p-4 rounded-2xl transition-all duration-700 hover:grow-[100] ${!project.clickable ? 'cursor-not-allowed hover:bg-red-500' : 'cursor-pointer'}`}
+                                            >
                                                 {project.name}
                                             </a>
                                         )
@@ -130,7 +163,18 @@ function Projects() {
                                     {categorie.projects.map((project) => {
 
                                         return (
-                                            <a key={project.name} href={project.clickable ? project.url : undefined} target="_blank" className={`text-center bg-white text-black py-2 px-4 rounded-2xl grow transition-all cursor-pointer ${!project.clickable ? 'cursor-not-allowed hover:bg-red-500' : 'cursor-pointer'}`}>
+                                            <a 
+                                                key={project.name} 
+                                                href={project.clickable ? project.url : undefined} 
+                                                target="_blank" 
+                                                onClick={(e) => {
+                                                    if (project.mp4) {
+                                                        e.preventDefault();
+                                                        setSelectedMp4(project.mp4);
+                                                    }
+                                                }}
+                                                className={`text-center bg-white text-black py-2 px-4 rounded-2xl grow transition-all cursor-pointer ${!project.clickable ? 'cursor-not-allowed hover:bg-red-500' : 'cursor-pointer'}`}
+                                            >
                                                 {project.name}
                                             </a>
                                         )
@@ -141,6 +185,10 @@ function Projects() {
                     })}
                 </div>
             </div>
+            <Modal 
+                mp4={selectedMp4} 
+                onClose={() => setSelectedMp4(null)} 
+            />
         </section>
     )
 }

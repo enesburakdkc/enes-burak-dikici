@@ -7,14 +7,12 @@ function Projects() {
     const categories = [
         {
             language: "Vue3 / Nuxt3", projects: [
-                { name: "To Do List", url: "vue-tailwind-to-do-list/", clickable: true },
                 { name: "Weather App", url: "vue-tailwind-weather-app/", clickable: true },
-                { name: "EduDiamond", url: "https://kurs.edudiamond.com/", clickable: true },
+                { name: "EduDiamond", url: "https://edudiamond.com/", clickable: true },
             ]
         },
         {
             language: "React / Next", projects: [
-                { name: "Digital Clock", url: "react-tailwind-digital-clock/", clickable: true },
                 { name: "Color Picker", url: "react-color-picker/", clickable: true },
                 { name: "To Do List", url: "react-tailwind-to-do-list/", clickable: true },
                 { name: "Portfolio", url: "/", clickable: true },
@@ -47,7 +45,7 @@ function Projects() {
                 <h2 className="text-4xl font-medium">Projeler</h2>
                 <br />
                 {categories.slice(0, 2).map((categorie) => {
-                    
+
                     return (
                         <div key={categorie.language} className="desktopProjects w-full flex flex-row gap-2 mt-4 font-normal">
                             <div className="h-36 flex flex-col gap-4 grow bg-black text-white p-4 rounded-2xl transition-all duration-700 hover:grow-[100]">
@@ -58,10 +56,10 @@ function Projects() {
                                     {categorie.projects.map((project) => {
 
                                         return (
-                                            <a 
-                                                key={project.name} 
-                                                href={project.clickable ? project.url : undefined} 
-                                                target="_blank" 
+                                            <a
+                                                key={project.name}
+                                                href={project.clickable ? project.url : undefined}
+                                                target="_blank"
                                                 onClick={(e) => {
                                                     if (project.mp4) {
                                                         e.preventDefault();
@@ -93,10 +91,10 @@ function Projects() {
                                     {categorie.projects.map((project) => {
 
                                         return (
-                                            <a 
-                                                key={project.name} 
-                                                href={project.clickable ? project.url : undefined} 
-                                                target="_blank" 
+                                            <a
+                                                key={project.name}
+                                                href={project.clickable ? project.url : undefined}
+                                                target="_blank"
                                                 onClick={(e) => {
                                                     if (project.mp4) {
                                                         e.preventDefault();
@@ -116,7 +114,7 @@ function Projects() {
                 </div>
 
                 {categories.slice(4, 5).map((categorie) => {
-                    
+
                     return (
                         <div key={categorie.language} className="desktopProjects w-full flex flex-row gap-2 mt-4 font-normal">
                             <div className="h-36 flex flex-col gap-4 grow bg-black text-white p-4 rounded-2xl transition-all duration-700 hover:grow-[100]">
@@ -127,10 +125,10 @@ function Projects() {
                                     {categorie.projects.map((project) => {
 
                                         return (
-                                            <a 
-                                                key={project.name} 
-                                                href={project.clickable ? project.url : undefined} 
-                                                target="_blank" 
+                                            <a
+                                                key={project.name}
+                                                href={project.clickable ? project.url : undefined}
+                                                target="_blank"
                                                 onClick={(e) => {
                                                     if (project.mp4) {
                                                         e.preventDefault();
@@ -162,10 +160,10 @@ function Projects() {
                                     {categorie.projects.map((project) => {
 
                                         return (
-                                            <a 
-                                                key={project.name} 
-                                                href={project.clickable ? project.url : undefined} 
-                                                target="_blank" 
+                                            <a
+                                                key={project.name}
+                                                href={project.clickable ? project.url : undefined}
+                                                target="_blank"
                                                 onClick={(e) => {
                                                     if (project.mp4) {
                                                         e.preventDefault();
@@ -184,9 +182,9 @@ function Projects() {
                     })}
                 </div>
             </div>
-            <Modal 
-                mp4={selectedMp4} 
-                onClose={() => setSelectedMp4(null)} 
+            <Modal
+                mp4={selectedMp4}
+                onClose={() => setSelectedMp4(null)}
             />
         </section>
     )

@@ -7,31 +7,36 @@ function About() {
                 <h2 className="text-4xl font-medium">Hakkımda</h2>
                 <br />
                 <p>
-                    <strong>Frontend</strong> ağırlıklı modern JavaScript kütüphaneleri üzerinde uzmanlaşan bir yazılım geliştiricisiyim.
+                    <strong>Frontend</strong> ağırlıklı modern <strong>JavaScript</strong> kütüphaneleri üzerinde uzmanlaşan bir yazılım geliştiricisiyim.
                 </p>
                 <br />
                 <p>
-                    Aktif olarak <strong>MongoDB, Node.js, Vue 3</strong> ve <strong>React</strong> gibi teknolojiler ve ilgili kütüphaneleri ile <strong>Full Stack</strong> yazılım
-                        geliştirici olarak küçük ve orta ölçekli projeler üzerinde çalışıyorum. Veri transferi için <strong>REST API</strong> ve <strong>WebSocket</strong>
-                        gibi mimariler kullanıyorum. Versiyon kontrol sistemleri için aktif olarak <strong>Git</strong> ve <strong>GitHub</strong> kullanıyorum.
-                        Projelerimde daha doğru kararlar verebilmek adına <strong>yapay zekayı</strong> efektif olarak kullanıyorum. Sunucu tarafına
-                        temel seviyede hakimim.
-                    </p>
-                        <br />
-                        <p>
-                            Daha önce <strong>Full Stack</strong> web geliştiricisi olarak farklı projelerde yer aldım. <strong>Nuxt 3, Node.js</strong> ve <strong>MongoDB</strong> gibi
-                            teknolojiler kullandım. <strong>Tailwind CSS</strong> tabanlı <strong>UI kütüphaneleri</strong> kullandım. <strong>PHP</strong> ve <strong>MySQL</strong> ile projeler
-                            geliştirdim. Yapay zeka <strong>API bağlantıları</strong> kullanarak <strong>SEO</strong> araçları geliştirdim. <strong>WordPress</strong> web siteleri tasarladım.
-                        </p>
-                        <br />
-                        <p>
-                            Kendimi geliştirebileceğim ve verimli çalışmalara imza atabileceğim takım
-                            arkadaşları arıyorum. Projelerimi bir arada derlemek amacıyla React ile
-                            kodladığım bu sitede projelerime göz atabilirsiniz.
-                        </p>
-                    </div>
-                </section>
-                )
+                    <strong>React, Next, Vue 3</strong> ve <strong>Nuxt 3</strong> gibi teknolojilerle ön yüz geliştirme konularında uzmanlığım bulunmakta olup, <strong>Node.js</strong> ve
+                    <strong>MongoDB</strong> gibi teknolojilerle de <strong>Full Stack</strong> projelerde aktif olarak yer almaktayım. <strong>REST API</strong> ve <strong>WebSocket (Socket.IO)</strong>
+                    mimarileriyle veri iletimi konusunda deneyim sahibiyim. Versiyon kontrol sistemi olarak <strong>Git</strong> ve <strong>GitHub</strong> kullanıyorum.
+                    Geliştirici gözüyle mimari kararlar alabilmek adına <strong>yapay zeka</strong> destekli analiz yöntemlerini etkin şekilde kullanıyorum. <strong>Sunucu</strong>
+                    tarafına temel seviyede hakimim.
+                </p>
+                <br />
+                <p>
+                    Daha önce eğitim kurumlarının tüm operasyonel süreçlerini yönetmeye yönelik, <strong>SAP</strong> benzeri bir yazılım projesinde <strong>Frontend</strong>
+                    ağırlıklı <strong>Full Stack</strong> geliştirici olarak aktif rol üstlendim. Burada <strong>REST API</strong> ve <strong>WebSocket (Socket.IO)</strong> gibi veri iletişimi
+                    mimarilerinde hakimiyet kazandım.
+                </p>
+                <br />
+                <p>
+                    <strong>Turkcell</strong> ve <strong>İş Bankası</strong> sponsorluğunda gerçekleşen <strong>GençBizz</strong> Girişimcilik Programı kapsamında ekibimle geliştirdiğimiz
+                    <strong>start-up</strong> projemizle <strong>ürkiye genelinde</strong> düzenlenen yarışmada <strong>finale kaldık</strong>. Şirketlerle sponsorluk anlaşmaları yaparak
+                    girişimcilik sürecini profesyonel şekilde yürütüyoruz. Projede <strong>Yazılım Mimarı</strong> ve <strong>Full Stack Developer</strong> olarak görev alıyor,
+                    sistemin teknik mimarisini tek başıma tasarlıyorum.
+                </p>
+                <br />
+                <p>
+                    Projelerimi bir arada derlemek amacıyla <strong>React</strong> ile geliştirdiğim bu sitede projelerime göz atabilirsiniz.
+                </p>
+            </div>
+        </section>
+    )
 }
 
-                export default About
+export default About

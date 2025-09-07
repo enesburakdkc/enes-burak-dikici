@@ -11,7 +11,7 @@ function Skills() {
                     <h2 className="text-4xl font-medium">Yetenekler</h2>
                     <br />
                     <ul className="flex flex-col gap-4">
-                        <li><span className="font-semibold">Frontend:</span> Vue 3, Nuxt 3, React, Next, TypeScript, JavaScript ES6, Tailwind CSS, CSS3, HTML5</li>
+                        <li><span className="font-semibold">Frontend:</span> React.js, Next +13 App, Vue 3, Nuxt 3, TypeScript, JavaScript ES6, Tailwind CSS, CSS3, HTML5</li>
                         <li><span className="font-semibold">Backend:</span> Node.js, PHP</li>
                         <li><span className="font-semibold">Database:</span> MongoDB, MySQL</li>
                         <li><span className="font-semibold">CMS:</span> WordPress, Ideasoft, TiciMax</li>

@@ -9,6 +9,7 @@ function Projects() {
             language: "Vue3 / Nuxt3", projects: [
                 { name: "EduDiamond", url: "https://kurs.edudiamond.com/", clickable: true },
                 { name: "Weather App", url: "vue-tailwind-weather-app/", clickable: true },
+                { name: "Corpy", url: "http://corpy.com.tr/", clickable: true },
             ]
         },
         {
@@ -23,16 +24,19 @@ function Projects() {
         {
             language: "PHP", projects: [
                 { name: "Comic Book", url: "ceviri-manga/", clickable: true },
-            ]
-        },
-        {
-            language: "JavaScript", projects: [
-                //{ name: "Small Projects", url: "small-js-projects/", clickable: true },
+                { name: "Rapkology", secondRow: "(Single Page)", url: "https://rapkology-blond.vercel.app/", clickable: true },
                 { name: "Calculator", url: "js-calculator/", clickable: true },
-                //{ name: "Weather App", url: "js-weather-app/", clickable: true },
                 { name: "Diğerleri", url: "https://github.com/enesburakdkc", clickable: true },
             ]
         },
+        //{
+        //    language: "JavaScript", projects: [
+        //        //{ name: "Small Projects", url: "small-js-projects/", clickable: true },
+        //        { name: "Calculator", url: "js-calculator/", clickable: true },
+        //        //{ name: "Weather App", url: "js-weather-app/", clickable: true },
+        //        { name: "Diğerleri", url: "https://github.com/enesburakdkc", clickable: true },
+        //    ]
+        //},
         //{
         //    language: "WordPress", projects: [
         //        { name: "Staticex", url: "https://tepeseobeta.online/staticex/", clickable: true },
@@ -111,6 +115,12 @@ function Projects() {
                                                 className={`min-w-4 h-full flex items-center justify-center text-center grow bg-white text-black p-4 rounded-2xl transition-all duration-700 hover:grow-[100] ${!project.clickable ? 'cursor-not-allowed hover:bg-red-500' : 'cursor-pointer'}`}
                                             >
                                                 {project.name}
+                                                {project.secondRow && (
+                                                    <>
+                                                        <br />
+                                                        {project.secondRow}
+                                                    </>
+                                                )}
                                             </a>
                                         )
                                     })}

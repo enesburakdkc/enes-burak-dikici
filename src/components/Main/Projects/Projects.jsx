@@ -8,7 +8,8 @@ function Projects() {
         {
             language: "Vue3 / Nuxt3", projects: [
                 { name: "EduDiamond", url: "https://kurs.edudiamond.com/", clickable: true },
-                { name: "Weather App", url: "vue-tailwind-weather-app/", clickable: true },
+                { name: "Staticex", url: "https://staticex.com.tr/", clickable: true },
+                { name: "Hotel", url: "https://dessuiteshotel.com/", clickable: true },
                 { name: "Corpy", url: "http://corpy.com.tr/", clickable: true },
             ]
         },
@@ -17,14 +18,15 @@ function Projects() {
                 //{ name: "Color Picker", url: "react-color-picker/", clickable: true },
                 //{ name: "To Do List", url: "react-tailwind-to-do-list/", clickable: true },
                 { name: "Portfolio", url: "/", clickable: true },
+                { name: "Weather App", url: "vue-tailwind-weather-app/", clickable: true },
                 { name: "Loodo", url: "#", clickable: true, mp4: "loodo" },
-                { name: "Start-Up", url: "#", clickable: false },
+                { name: "MangasRead", url: "https://mangasread.com/tr", clickable: true },
             ]
         },
         {
             language: "PHP", projects: [
                 { name: "Comic Book", url: "ceviri-manga/", clickable: true },
-                { name: "Rapkology", secondRow: "(Single Page)", url: "https://rapkology-blond.vercel.app/", clickable: true },
+                { name: "Rapkology", secondRow: "(Tasarım)", url: "https://rapkology-blond.vercel.app/", clickable: true },
                 { name: "Calculator", url: "js-calculator/", clickable: true },
                 { name: "Diğerleri", url: "https://github.com/enesburakdkc", clickable: true },
             ]
@@ -78,6 +80,12 @@ function Projects() {
                                                 className={`min-w-4 h-full flex items-center justify-center text-center grow bg-white text-black p-4 rounded-2xl transition-all duration-700 hover:grow-[100] ${!project.clickable ? 'cursor-not-allowed hover:bg-red-500' : 'cursor-pointer'}`}
                                             >
                                                 {project.name}
+                                                {project.secondRow && (
+                                                    <>
+                                                        <br />
+                                                        {project.secondRow}
+                                                    </>
+                                                )}
                                             </a>
                                         )
                                     })}
@@ -157,6 +165,12 @@ function Projects() {
                                                 className={`min-w-4 h-full flex items-center justify-center text-center grow bg-white text-black p-4 rounded-2xl transition-all duration-700 hover:grow-[100] ${!project.clickable ? 'cursor-not-allowed hover:bg-red-500' : 'cursor-pointer'}`}
                                             >
                                                 {project.name}
+                                                {project.secondRow && (
+                                                    <>
+                                                        <br />
+                                                        {project.secondRow}
+                                                    </>
+                                                )}
                                             </a>
                                         )
                                     })}
@@ -192,6 +206,12 @@ function Projects() {
                                                 className={`text-center bg-white text-black py-2 px-4 rounded-2xl grow transition-all cursor-pointer ${!project.clickable ? 'cursor-not-allowed hover:bg-red-500' : 'cursor-pointer'}`}
                                             >
                                                 {project.name}
+                                                {project.secondRow && (
+                                                    <>
+                                                        <br />
+                                                        {project.secondRow}
+                                                    </>
+                                                )}
                                             </a>
                                         )
                                     })}

@@ -10,8 +10,8 @@ function Main() {
         <main className="main w-[65vw] flex flex-col pl-[5vw] m-auto">
             <Home />
             <About />
-            <Skills />
             <Projects />
+            <Skills />
             <ContactMe />
         </main>
     )

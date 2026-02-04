@@ -13,23 +13,23 @@ function Header() {
     const categories = [
         { id: 'home', name: 'Ana Sayfa' },
         { id: 'about', name: 'Hakkımda' },
-        { id: 'skills', name: 'Yetenekler' },
         { id: 'projects', name: 'Projeler' },
+        { id: 'skills', name: 'Yetenekler' },
         { id: 'contact', name: 'İletişim' }]
 
     const toggleMenu = () => {
-        isMenuOpen ? setTimeout(() => {setIsMenuOpen(false)}, 1200) : setIsMenuOpen(true)
+        isMenuOpen ? setTimeout(() => { setIsMenuOpen(false) }, 1200) : setIsMenuOpen(true)
         setIsMenuClosing(!isMenuClosing)
     }
 
     const handleOutsideClick = (e) => {
         if (!e.target.closest('.navbar')) {
             setIsMenuClosing(true)
-            setTimeout(() => {setIsMenuOpen(false)}, 1200)
+            setTimeout(() => { setIsMenuOpen(false) }, 1200)
         }
     }
 
-    const  handleScroll = (id) => {
+    const handleScroll = (id) => {
         const element = document.getElementById(id)
         if (element) {
             lastScrollY > element.offsetTop ? window.scrollTo({ top: element.offsetTop - 96, behavior: 'smooth' }) : window.scrollTo({ top: element.offsetTop, behavior: 'smooth' })

@@ -6,221 +6,77 @@ function Projects() {
 
     const categories = [
         {
-            language: "Vue3 / Nuxt3", projects: [
-                { name: "EduDiamond", url: "https://kurs.edudiamond.com/", clickable: true },
+            language: "WordPress", projects: [
+                { name: "We Liva", url: "https://weliva.com.tr/", clickable: true },
+                { name: "Corpy", url: "http://corpy.com.tr/", clickable: true },
                 { name: "Staticex", url: "https://staticex.com.tr/", clickable: true },
                 { name: "Hotel", url: "https://dessuiteshotel.com/", clickable: true },
-                { name: "Corpy", url: "http://corpy.com.tr/", clickable: true },
+                { name: "Karahan", url: "https://globalkarahan.com/", clickable: true },
             ]
         },
         {
-            language: "React / Next", projects: [
-                //{ name: "Color Picker", url: "react-color-picker/", clickable: true },
-                //{ name: "To Do List", url: "react-tailwind-to-do-list/", clickable: true },
-                { name: "Portfolio", url: "/", clickable: true },
-                { name: "Weather App", url: "vue-tailwind-weather-app/", clickable: true },
-                { name: "Loodo", url: "#", clickable: true, mp4: "loodo" },
-                { name: "MangasRead", url: "https://mangasread.com/tr", clickable: true },
-            ]
-        },
-        {
-            language: "PHP", projects: [
-                { name: "Comic Book", url: "ceviri-manga/", clickable: true },
+            language: "Özel Yazılım", projects: [
+                { name: "EduDiamond", url: "https://kurs.edudiamond.com/", clickable: true },
+                { name: "Comic Book", url: "https://cevirimanga.great-site.net/", clickable: true },
+                { name: "Weather App", url: "https://vue-tailwind-weather-app-five.vercel.app/", clickable: true },
                 { name: "Rapkology", secondRow: "(Tasarım)", url: "https://rapkology-blond.vercel.app/", clickable: true },
-                { name: "Calculator", url: "js-calculator/", clickable: true },
+                { name: "Sütlü Aş", secondRow: "(Tasarım)", url: "https://sutluas.com/", clickable: true },
+                { name: "Belgrad Country", secondRow: "(Tasarım)", url: "https://belgradcountry.com/", clickable: true },
+                { name: "Mayfair Estates", secondRow: "(Tasarım)", url: "https://mayfairestates.net/", clickable: true },
+                { name: "Calculator", url: "https://js-calculator-roan-theta.vercel.app/", clickable: true },
+                { name: "Loodo", url: "#", clickable: true, mp4: "loodo" },
                 { name: "Diğerleri", url: "https://github.com/enesburakdkc", clickable: true },
             ]
-        },
-        //{
-        //    language: "JavaScript", projects: [
-        //        //{ name: "Small Projects", url: "small-js-projects/", clickable: true },
-        //        { name: "Calculator", url: "js-calculator/", clickable: true },
-        //        //{ name: "Weather App", url: "js-weather-app/", clickable: true },
-        //        { name: "Diğerleri", url: "https://github.com/enesburakdkc", clickable: true },
-        //    ]
-        //},
-        //{
-        //    language: "WordPress", projects: [
-        //        { name: "Staticex", url: "https://tepeseobeta.online/staticex/", clickable: true },
-        //        { name: "Hotel", url: "https://tepeseobeta.online/zeugma/", clickable: true },
-        //        { name: "Corpy", url: "http://corpy.com.tr/", clickable: true },
-        //    ]
-        //},
+        }
     ]
 
     return (
-        <section id="projects" className="projects w-full min-h-[100vh] max-h-[calc(100vh-6rem)] flex flex-row justify-evenly items-center">
-            <div className="w-full max-h-[calc(100vh-6rem)] font-light ">
+        <section id="projects" className="projects w-full py-20 min-h-screen flex flex-col justify-center items-center gap-16 px-4 md:px-10 lg:px-20">
+            <div className="w-full max-w-7xl">
                 <h2 className="text-4xl font-medium">Projeler</h2>
-                <br />
-                {categories.slice(0, 2).map((categorie) => {
 
-                    return (
-                        <div key={categorie.language} className="desktopProjects w-full flex flex-row gap-2 mt-4 font-normal">
-                            <div className="h-28 flex flex-col gap-4 grow bg-black text-white p-4 rounded-2xl transition-all duration-700 hover:grow-[100]">
-                                {/* 
-                                <div>
-                                    {categorie.language}
-                                </div>
-                                */}
-                                <div className="h-28 flex flex-row gap-4 items-center justify-center grow bg-black text-white rounded-2xl bg-transparent transition-all duration-700 hover:grow-[100]">
-                                    {categorie.projects.map((project) => {
-
-                                        return (
-                                            <a
-                                                key={project.name}
-                                                href={project.clickable ? project.url : undefined}
-                                                target="_blank"
-                                                onClick={(e) => {
-                                                    if (project.mp4) {
-                                                        e.preventDefault();
-                                                        setSelectedMp4(project.mp4);
-                                                    }
-                                                }}
-                                                className={`min-w-4 h-full flex items-center justify-center text-center grow bg-white text-black p-4 rounded-2xl transition-all duration-700 hover:grow-[100] ${!project.clickable ? 'cursor-not-allowed hover:bg-red-500' : 'cursor-pointer'}`}
-                                            >
-                                                {project.name}
-                                                {project.secondRow && (
-                                                    <>
-                                                        <br />
-                                                        {project.secondRow}
-                                                    </>
-                                                )}
-                                            </a>
-                                        )
-                                    })}
-                                </div>
+                <div className="flex flex-col gap-16 mt-12">
+                    {categories.map((category) => (
+                        <div key={category.language} className="w-full">
+                            <h3 className="text-2xl font-medium mb-4 pl-2 border-l-4 border-black">{category.language}</h3>
+                            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4">
+                                {category.projects.map((project) => (
+                                    <a
+                                        key={project.name}
+                                        href={project.clickable ? project.url : undefined}
+                                        target="_blank"
+                                        rel="noreferrer"
+                                        onClick={(e) => {
+                                            if (project.mp4) {
+                                                e.preventDefault();
+                                                setSelectedMp4(project.mp4);
+                                            }
+                                        }}
+                                        className={`
+                                            group relative flex flex-col items-center justify-center 
+                                            h-40 p-6 bg-neutral-900 rounded-2xl 
+                                            transform transition-all duration-300 ease-out 
+                                            hover:-translate-y-2 hover:shadow-2xl hover:bg-black
+                                            ${!project.clickable ? 'cursor-not-allowed opacity-50' : 'cursor-pointer'}
+                                        `}
+                                    >
+                                        <div className="absolute inset-0 bg-white/5 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                                        <span className="text-white text-lg font-medium text-center z-10 group-hover:scale-105 transition-transform duration-300">
+                                            {project.name}
+                                        </span>
+                                        {project.secondRow && (
+                                            <span className="text-gray-400 text-sm mt-1 z-10 group-hover:text-white transition-colors duration-300">
+                                                {project.secondRow}
+                                            </span>
+                                        )}
+                                    </a>
+                                ))}
                             </div>
                         </div>
-                    )
-                })}
-
-                <div className="desktopProjects w-full flex flex-row gap-4 mt-4 font-normal">
-
-                    {categories.slice(2, 4).map((categorie) => {
-
-                        return (
-                            <div key={categorie.language} className="h-28 flex flex-col gap-4 grow bg-black text-white p-4 rounded-2xl transition-all duration-700 hover:grow-[100]">
-                                {/* 
-                                <div>
-                                    {categorie.language}
-                                </div>
-                                */}
-                                <div key={categorie.language} className="h-28 flex flex-row gap-4 items-center justify-center grow bg-black text-white rounded-2xl bg-transparent transition-all duration-700 hover:grow-[100]">
-                                    {categorie.projects.map((project) => {
-
-                                        return (
-                                            <a
-                                                key={project.name}
-                                                href={project.clickable ? project.url : undefined}
-                                                target="_blank"
-                                                onClick={(e) => {
-                                                    if (project.mp4) {
-                                                        e.preventDefault();
-                                                        setSelectedMp4(project.mp4);
-                                                    }
-                                                }}
-                                                className={`min-w-4 h-full flex items-center justify-center text-center grow bg-white text-black p-4 rounded-2xl transition-all duration-700 hover:grow-[100] ${!project.clickable ? 'cursor-not-allowed hover:bg-red-500' : 'cursor-pointer'}`}
-                                            >
-                                                {project.name}
-                                                {project.secondRow && (
-                                                    <>
-                                                        <br />
-                                                        {project.secondRow}
-                                                    </>
-                                                )}
-                                            </a>
-                                        )
-                                    })}
-                                </div>
-                            </div>
-                        )
-                    })}
-                </div>
-
-                {categories.slice(4, 5).map((categorie) => {
-
-                    return (
-                        <div key={categorie.language} className="desktopProjects w-full flex flex-row gap-2 mt-4 font-normal">
-                            <div className="h-28 flex flex-col gap-4 grow bg-black text-white p-4 rounded-2xl transition-all duration-700 hover:grow-[100]">
-                                {/* 
-                                <div>
-                                    {categorie.language}
-                                </div>
-                                */}
-                                <div className="h-28 flex flex-row gap-4 items-center justify-center grow bg-black text-white rounded-2xl bg-transparent transition-all duration-700 hover:grow-[100]">
-                                    {categorie.projects.map((project) => {
-
-                                        return (
-                                            <a
-                                                key={project.name}
-                                                href={project.clickable ? project.url : undefined}
-                                                target="_blank"
-                                                onClick={(e) => {
-                                                    if (project.mp4) {
-                                                        e.preventDefault();
-                                                        setSelectedMp4(project.mp4);
-                                                    }
-                                                }}
-                                                className={`min-w-4 h-full flex items-center justify-center text-center grow bg-white text-black p-4 rounded-2xl transition-all duration-700 hover:grow-[100] ${!project.clickable ? 'cursor-not-allowed hover:bg-red-500' : 'cursor-pointer'}`}
-                                            >
-                                                {project.name}
-                                                {project.secondRow && (
-                                                    <>
-                                                        <br />
-                                                        {project.secondRow}
-                                                    </>
-                                                )}
-                                            </a>
-                                        )
-                                    })}
-                                </div>
-                            </div>
-                        </div>
-                    )
-                })}
-
-                {/* Mobile */}
-                <div className="mobileProjects hidden w-full flex flex-col gap-4">
-                    {categories.map((categorie) => {
-
-                        return (
-
-                            <div key={categorie.language} className="flex p-4 flex-col gap-2 bg-black rounded-2xl">
-                                {/* <p className="font-semibold text-white mb-2">{categorie.language}</p> */}
-
-                                <div className="flex flex-row gap-2 flex-wrap">
-                                    {categorie.projects.map((project) => {
-
-                                        return (
-                                            <a
-                                                key={project.name}
-                                                href={project.clickable ? project.url : undefined}
-                                                target="_blank"
-                                                onClick={(e) => {
-                                                    if (project.mp4) {
-                                                        e.preventDefault();
-                                                        setSelectedMp4(project.mp4);
-                                                    }
-                                                }}
-                                                className={`text-center bg-white text-black py-2 px-4 rounded-2xl grow transition-all cursor-pointer ${!project.clickable ? 'cursor-not-allowed hover:bg-red-500' : 'cursor-pointer'}`}
-                                            >
-                                                {project.name}
-                                                {project.secondRow && (
-                                                    <>
-                                                        <br />
-                                                        {project.secondRow}
-                                                    </>
-                                                )}
-                                            </a>
-                                        )
-                                    })}
-                                </div>
-                            </div>
-                        )
-                    })}
+                    ))}
                 </div>
             </div>
+
             <Modal
                 mp4={selectedMp4}
                 onClose={() => setSelectedMp4(null)}

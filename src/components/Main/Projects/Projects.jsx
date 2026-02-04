@@ -31,7 +31,7 @@ function Projects() {
     ]
 
     return (
-        <section id="projects" className="projects w-full py-20 min-h-screen flex flex-col justify-center items-center gap-16 px-4 md:px-10 lg:px-20">
+        <section id="projects" className="projects min-h-[100vh] max-h-[calc(100vh-6rem)] flex flex-col justify-center items-center gap-16">
             <div className="w-full max-w-7xl">
                 <h2 className="text-4xl font-medium">Projeler</h2>
 

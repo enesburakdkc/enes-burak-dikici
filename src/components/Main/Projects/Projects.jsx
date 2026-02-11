@@ -11,7 +11,7 @@ function Projects() {
                 { name: "Corpy", url: "http://corpy.com.tr/", clickable: true },
                 { name: "Staticex", url: "https://staticex.com.tr/", clickable: true },
                 { name: "Hotel", url: "https://dessuiteshotel.com/", clickable: true },
-                { name: "Karahan", url: "https://globalkarahan.com/", clickable: true },
+                { name: "May Fair Estates", url: "https://mayfairestates.net/wp/", clickable: true },
             ]
         },
         {
